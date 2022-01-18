@@ -1,0 +1,99 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  width: 100%;
+}
+
+#logo_page {
+  margin: 10px 0 0 20px;
+}
+
+#menu {
+  background-color: white;
+  width: 100%;
+  box-shadow: 2px 2px 5px #999;
+  height: 10vh;
+}
+
+#contenedor_principal {
+  background-color: #eff1fa;
+  width: 100%;
+  margin: 5px 0 5px 0;
+  padding: 10px 40px 10px 40px;
+}
+
+.caja_texto {
+  margin: 50px;
+  padding: 20px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+textarea.form-control {
+  border: 2px solid blue;
+  border-radius: 20px;
+}
+
+.botones {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+div[class*="btn"] {
+  border: solid 2px blue;
+  border-radius: 20px;
+  width: 100%;
+
+  letter-spacing: 2px;
+  position: relative;
+  transition: all 0.35s;
+}
+
+div[class*="btn"] p {
+  position: relative;
+  z-index: 2;
+}
+
+div[class*="btn"]:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #ff003b;
+  border-radius: 18px;
+  transition: all 0.35s;
+}
+
+div[class*="btn"]:hover {
+  color: #fff;
+}
+
+div[class*="btn"]:hover:after {
+  width: 100%;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.redes_sociales {
+  list-style: none;
+  display: inline-flex;
+  gap: 10px;
+}
+
+.redes_sociales img {
+  width: 40px;
+}
