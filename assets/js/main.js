@@ -1,6 +1,6 @@
-/*var texto = document.querySelector("#texto").value;
-var resultado = document.querySelector("#resultado").value;
-textarea.focus();*/
+var texto = document.querySelector("#texto");
+var resultado = document.querySelector("#resultado");
+texto.focus();
 
 function encriptar(){
     var texto = document.querySelector("#texto").value;
