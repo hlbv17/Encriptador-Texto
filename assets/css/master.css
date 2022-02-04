@@ -119,14 +119,16 @@ footer {
 }
 
 footer p {
-  padding: 10px 0 5px 0;
+  padding: 5px 0 0px 0;
   text-align: center;
+  margin-bottom: 0px !important;
 }
 
 .redes_sociales {
   list-style: none;
   display: inline-flex;
   gap: 10px;
+  padding-left: 0px !important;
 }
 
 address {
