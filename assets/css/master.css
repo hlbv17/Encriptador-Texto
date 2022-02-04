@@ -21,6 +21,7 @@ html {
 #contenedor_principal {
   background-color: #eff1fa;
   width: 100%;
+
   margin: 5px 0 5px 0;
   padding: 10px 40px 20px 40px;
 }
@@ -61,6 +62,11 @@ textarea.form-control {
   padding-top: 50px;
 }
 
+.btn.encriptar {
+  background: #0a3871;
+  color: #fff;
+}
+
 div[class*="btn"] {
   border: solid 2px #0a3871;
   border-radius: 20px;
@@ -83,7 +89,7 @@ div[class*="btn"]:after {
   width: 0;
   height: 100%;
   background: #0a3871;
-  border-radius: 18px;
+  border-radius: 16px;
   transition: all 0.35s;
 }
 
@@ -96,8 +102,25 @@ div[class*="btn"]:hover:after {
 }
 
 footer {
+  /*background: rgba(11, 58, 116, 0.4);
+  background: rgba(11, 58, 116);*/
+  color: black;
+  /*box-shadow: 2px 2px 5px #999;*/
+  font-size: 12px;
+  font-weight: bold;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  align-self: flex-end;
+  padding-top: 20px;
+  box-shadow: 2px -1px 5px #999;
+}
+
+footer p {
+  padding: 10px 0 5px 0;
+  text-align: center;
 }
 
 .redes_sociales {
@@ -106,6 +129,13 @@ footer {
   gap: 10px;
 }
 
+address {
+  padding-bottom: 10px;
+}
+
 .redes_sociales img {
   width: 40px;
+}
+
+@media screen and (max-width: 930px) {
 }

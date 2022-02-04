@@ -46,7 +46,19 @@ function desencriptar(){
 };
 
 function copiar(){
-
+    var resultado = document.querySelector("#resultado");
+    resultado.select();
+    document.execCommand("copy");
+    /*try {
+        var status = document.execCommand('copy');
+        if(!status){
+            console.error("No se pudo copiar el texto");
+        }else{
+            console.log("El texto ahora está en el portapapeles");
+        }
+    } catch (err) {
+        console.log('Uy, no se pudo copiar');
+    }*/
 };
 
 var btnEncriptar = document.querySelector(".btn.encriptar");
@@ -54,3 +66,6 @@ btnEncriptar.onclick = encriptar;
 
 var btnDesencriptar = document.querySelector(".btn.desencriptar");
 btnDesencriptar.onclick = desencriptar;
+
+var btnCopiar = document.querySelector(".btn.copiar");
+btnCopiar.onclick = copiar;
